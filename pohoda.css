@@ -1,1 +1,64 @@
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+#menu {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3px;
+    margin: 10px;
+    border-radius: 30px;
+}
+#expandable-menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#expandable-menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    box-shadow: none;
+    margin: 0 5px;
+    transition: transform 0.2s ease;
+}
+#expandable-menu-button.pressed { transform: scale(0.9); }
+#return-to-center-icon { fill: black; }
+#compass {
+    margin: 10px;
+    transition: transform 0.5s ease;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#expanded-menu {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3px;
+    border-radius: 30px;
+}
+#expandable-menu.expanded #expanded-menu { display: flex; }
+#expanded-menu #return-to-center {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    box-shadow: none;
+    margin: 0 5px;
+    transition: transform 0.2s ease;
+}
+#expanded-menu #return-to-center.pressed { transform: scale(0.9); }
+#expandable-menu-button.expanded.pressed { transform: scale(0.9); }
 
