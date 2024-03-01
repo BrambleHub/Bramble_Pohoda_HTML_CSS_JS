@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Smooth Pitch Correction Map</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
+    <link href='style.css' rel='stylesheet' />
+</head>
+<body>
+    <div id='map'></div>
+    <div id="menu">
+        <div id="expandable-menu">
+            <button id="expandable-menu-button">
+                <img src="https://github.com/brambleappmatus/resources/blob/main/menu.png?raw=true" alt="Menu" width="24px" height="24px">
+            </button>
+            <div id="expanded-menu">
+                <button id="return-to-center">
+                    <img src="https://github.com/brambleappmatus/resources/blob/main/home.png?raw=true" alt="Return to Center" width="24px" height="24px">
+                </button>
+            </div>
+        </div>
+        <div id="compass">
+            <img src="https://github.com/brambleappmatus/resources/blob/main/compass.png?raw=true" alt="Compass" width="32px" height="32px">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
